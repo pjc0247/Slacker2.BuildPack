@@ -1,5 +1,8 @@
+
 cd $1
 EXE_PATH=$(find -type f -name *.exe)
+
+echo ${EXE_PATH}
 
 cat << EOF
 ---
