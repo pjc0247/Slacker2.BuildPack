@@ -24,10 +24,13 @@ export LD_LIBRARY_PATH="/app/mono/lib:${LD_LIBRARY_PATH}"
 
 
 
-ls -l
 
 cd /app
+ls -l
+
 
 CSPROJ="$(find -type f -name *.csproj)"
+
+echo ${CSPROJ}
 
 xbuild ${CSPROJ} 
