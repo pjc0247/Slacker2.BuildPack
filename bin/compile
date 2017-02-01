@@ -45,6 +45,4 @@ mono nuget.exe update -self
 mono nuget.exe restore ${SLN} 
 xbuild ${CSPROJ} 
 
-EXE_PATH="$(find . -path */bin/*/*.exe -type f -name *.exe)"
 
-echo ${EXE_PATH}
