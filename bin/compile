@@ -34,6 +34,7 @@ CSPROJ="$(find -type f -name *.csproj)"
 
 echo ${CSPROJ}
 
+nuget restore ${CSPROJ} 
 xbuild ${CSPROJ} 
 
 EXE_PATH="$(find . -path */bin/*/*.exe -type f -name *.exe)"
