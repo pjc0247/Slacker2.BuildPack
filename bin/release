@@ -5,5 +5,5 @@ EXE_PATH=$(find -type f -name *.exe)
 cat << EOF
 ---
 default_process_types:
-  worker: mono/bin/mono "$EXE_PATH"
+  worker: mono/bin/mono
 EOF
