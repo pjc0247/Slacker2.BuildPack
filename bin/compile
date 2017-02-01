@@ -14,7 +14,7 @@ echo "INSTALLING MONO"
 
 
 curl "https://github.com/friism/mono-builder/releases/download/v4.2.0.207/mono-4.2.0.207.tar.gz" -Ls | tar xz -C ${BUILD_DIR}
-curl "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -Ls > nuget.exe
+curl "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -Ls > ${BUILD_DIR}/nuget.exe
 
 
 ln -s ${BUILD_DIR}/mono /app
