@@ -33,10 +33,11 @@ ls -l
 
 
 CSPROJ="$(find -type f -name *.csproj)"
+PKG="$(find -type f -name packages.config)"
 
 echo ${CSPROJ}
 
-mono nuget.exe restore ${CSPROJ} 
+mono nuget.exe restore ${PKG} 
 xbuild ${CSPROJ} 
 
 EXE_PATH="$(find . -path */bin/*/*.exe -type f -name *.exe)"
