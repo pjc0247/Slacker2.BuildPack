@@ -40,7 +40,7 @@ mozroots --sync --import
 yes | certmgr -ssl https://go.microsoft.com
 yes | certmgr -ssl https://nugetgallery.blob.core.windows.net
 yes | certmgr -ssl https://nuget.org
-yes | certmgr -ssl https://slack.com
+yes | certmgr -ssl wss://slack-msgs.com:443
 
 mono nuget.exe update -self
 mono nuget.exe restore ${SLN} 
