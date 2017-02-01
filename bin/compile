@@ -36,6 +36,6 @@ echo ${CSPROJ}
 
 xbuild ${CSPROJ} 
 
-EXE_PATH="$(find bin/**/*.exe -type f -name *.exe)"
+EXE_PATH="$(find . -path */bin/*/*.exe -type f -name *.exe)"
 
 echo ${EXE_PATH}
