@@ -1,9 +1,6 @@
-
+ 
 cd $1
 EXE_PATH=$(find -type f -name *.exe)
 
-cat << EOF
----
-default_process_types:
-  worker: mono/bin/mono
-EOF
+echo "default_process_types:"
+echo "  worker: $EXE_PATH"
