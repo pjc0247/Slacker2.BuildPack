@@ -1,1 +1,6 @@
+#!/usr/bin/env bash
 
+# bin/detect <build-dir>
+
+echo "always accept"
+exit 0
