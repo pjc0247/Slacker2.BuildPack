@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 # bin/compile <build-dir> <cache-dir>
@@ -34,3 +35,7 @@ CSPROJ="$(find -type f -name *.csproj)"
 echo ${CSPROJ}
 
 xbuild ${CSPROJ} 
+
+EXE_PATH="$(find -type f -name *.exe)"
+
+echo ${EXE_PATH}
