@@ -36,7 +36,7 @@ SLN="$(find -type f -name *.sln)"
 
 echo ${CSPROJ}
 
-mono mozroots.exe --sync --import
+mozroots --sync --import
 
 mono nuget.exe update -self
 mono nuget.exe restore ${SLN} 
